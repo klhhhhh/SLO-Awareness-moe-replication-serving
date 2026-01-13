@@ -1,0 +1,9 @@
+python scripts/launch_sglang_server.py \
+  --model Qwen/Qwen2.5-1.5B-Instruct \
+  --host 0.0.0.0 \
+  --port 30000 \
+  --tp 1 \
+  --logdir logs \
+  --launch-mode module \
+  --entry sglang.launch_server \
+  --extra-args "--dtype auto"
